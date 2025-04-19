@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Maxence Art Puzzle</title>
+    <link rel="icon" href="./assets/favicon.ico">
+    <link href="./assets/style.css" rel="stylesheet" />
+    <script src="pazzle.js"></script>
+</head>
 <body>
-    子ページ    
+    <div id="describe" class="describe">
+        絵をならべかえて Mr.K を完成させよう(右が正解)
+    </div>
+    <div class="content">
+        <div id="pazzle" class="pazzle"></div>
+
+        <div id="answer" class="answer">
+            <img id="mrk" src="./assets/mrk.png">
+        </div>
+    </div>
+
+    <button id="reset" class="button" onclick="reset()">リセット</button>
+    <div id="message" class="message"></div>
 </body>
 </html>

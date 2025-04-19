@@ -1,0 +1,43 @@
+.content {
+    display: flex;
+    min-width: 980px;
+    margin-top: 20px;
+}
+
+.pazzle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 399px;
+    height: 399px;
+    background-color: #010a38;
+    border: 10px solid #4d4d4d;
+    border-radius: 1px;
+}
+
+.tile__img {
+    width: 130px;
+    height: 130px;
+    border: 1px solid #adb5bd;
+    margin: 0;
+    padding: 0;
+}
+
+.answer {
+    margin-left: 40px;
+}
+
+.button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: #4d4d4d;
+}
+
+.message {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    background-color: #a5b2f1;
+    color: #010a38;
+}
