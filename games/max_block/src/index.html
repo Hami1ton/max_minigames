@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mr.Kのブロック崩し</title>
+    <link href="./assets/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="game-container" >
+        <div id="message"></div>
+        <div id="timer"></div>
+        <canvas id="gameCanvas" width="780" height="400" tabindex="0"></canvas>
+        <div id="hp-bar">
+            <div id="hp"></div>
+        </div>
+        <div id="hpv"></div>
+    </div>
+    <button id="resetButton" class="gameButton">リセット</button>
+
+    <div id="manual" >
+        <p>Mr.K(黄色のキャラクター)を操作して遊ぶブロック崩しです。</p>
+        
+        <li>玉を発射してブロックを消してください</li>
+        <li>発射した玉にあたるとダメージをうけるので、うまく避けましょう</li>
+        <li>早い時間にクリアすると、Mr.Kが労い？の言葉をかけてくれます</li>
+        <li>操作方法</li>
+        <ul>
+            <li>Mr.Kの移動: マウスクリック & ドラッグ</li>
+            <li>玉発射: w キー</li>
+            <li>リセットボタン: ゲームをやり直し</li>
+        </ul>
+    </div>
+
+    <script src="block.js"></script>
+    <script src="goroku.js"></script>
+</body>
+</html>
