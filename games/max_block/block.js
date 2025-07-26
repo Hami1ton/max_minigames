@@ -18,6 +18,7 @@ const characterImage = new Image();
 characterImage.src = "assets/mrK.png";
 
 let isDragging = false;
+let startFlg = false;
 let offsetX, offsetY;
 
 // ループ保存用
@@ -59,6 +60,10 @@ const updateHP = () => {
 
 const gameLoop = () => {
     // メインループ
+    if (!startFlg) {
+        messageElement.textContent = "黒画面をクリックしてゲーム開始";
+        return;
+    }
     if (gameOver) return;
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -187,6 +192,13 @@ canvas.addEventListener("mouseup", () => {
 
 canvas.addEventListener("mouseleave", () => {
     isDragging = false;
+});
+
+canvas.addEventListener("click", () => {
+    if (!startFlg){
+        startFlg = true;
+        initGame();
+    }
 });
 
 resetButton.addEventListener("click", initGame);
